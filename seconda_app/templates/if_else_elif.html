@@ -1,4 +1,5 @@
-<body>
+{%extends "base.html"%}
+{%block content%}
     <b>var1 = {{ var1 }}</b><br/>
     <b>var2 = {{ var2 }}</b><br/>
     <b>var3 = {{ var3 }}</b><br/>
@@ -43,5 +44,5 @@
     {% else %}
         <p><i>var1 è uguale a var2</i></p>
     {% endif %}
-
+{%endblock content%}
 
