@@ -1,0 +1,15 @@
+{%extends "base.html"%}
+
+{% block title %} 
+    {{block.super}} | Lista articoli 
+{% endblock title %}
+
+{%block content%}
+    <h4>Lista Articoli: </h4>
+    {% for articolo in articoli %}
+        <p><strong>Titolo:{{articolo.titolo}}</strong></p>
+        <p><strong>Contenuto:{{articolo.contenuto}}</strong></p>
+        <p><strong>Autore:{{articolo.giornalista}}</strong></p>
+        <hr>
+    {% endfor %}
+{%endblock content%}

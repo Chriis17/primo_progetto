@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Articolo, Giornalista
+from news.models import Articolo, Giornalista
 
 def articoloDetailView(request, pk):
     articolo = get_object_or_404(Articolo, pk=pk)
@@ -7,7 +7,15 @@ def articoloDetailView(request, pk):
     return render(request, "articolo_detail.html", context)
 
 # Create your views here.
-
+def listaArticoli(request,pk=None):
+    if pk==None:
+        articoli= Articolo.objects.all()
+    else:
+        articoli = Articolo.objects.filter(giornalista_id=pk)
+    context={
+            "articoli": articoli,
+    }
+    return render(request, "lista_articoli.html", context)
 
 """def home(request):
     a=""
@@ -43,5 +51,5 @@ def home(request):
     context = {"articoli": articoli, "giornalisti":giornalisti}
     print(context)
     
-    return render(request,"homepage.html", context)
+    return render(request,"homepage_news.html", context)
 
