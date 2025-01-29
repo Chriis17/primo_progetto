@@ -15,3 +15,7 @@ def if_else_elif(request):
         'var3' : 100.50,
     }
     return render(request,"if_else_elif.html", context)
+def index(request):
+    return render(request,"index2.html")
+def index_root(request):
+    return render(request,"index_root.html")

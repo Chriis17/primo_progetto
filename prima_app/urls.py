@@ -1,5 +1,5 @@
 from django.urls import path
-from prima_app.views import homepage,welcome,lista, chi_siamo,variabili,index
+from prima_app.views import homepage,welcome,lista, chi_siamo,variabili,index,index_root
 
 app_name="prima_app"
 urlpatterns=[
@@ -8,5 +8,6 @@ urlpatterns=[
     path('lista',lista, name="lista"),
     path('chi_siamo',chi_siamo, name="chi_siamo"),
     path('variabili',variabili, name="variabili"),
+    path('index_root',index_root, name="index_root"),
     path('',index, name="index"),
 ]

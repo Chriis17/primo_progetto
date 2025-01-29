@@ -11,6 +11,8 @@ def chi_siamo(request):
     return render(request,"chi_siamo.html")
 def index(request):
     return render(request,"index.html")
+def index_root(request):
+    return render(request,"index_root.html")
 def variabili(request):
     context={
         'var1': 'Prima variabile',
