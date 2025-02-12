@@ -3,6 +3,7 @@ from corsi_formazione.views import indexCorsi,view_a,view_b,view_c,view_d,view_e
 
 app_name = 'corsi_formazione'
 
+#urlpatterns di tutte le view
 urlpatterns=[
     path('indexCorsi',indexCorsi, name="indexCorsi"),
     path('view_a',view_a, name="view_a"),

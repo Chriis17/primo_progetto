@@ -1,6 +1,8 @@
 from django.db import models
 from datetime import datetime
 
+# Modello Corso
+
 class Corso(models.Model):
     titolo=models.CharField(max_length=20)
     descrizione=models.TextField()
