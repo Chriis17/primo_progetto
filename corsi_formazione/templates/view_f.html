@@ -1,0 +1,11 @@
+{%extends "base.html"%}
+{% block title %} 
+Statistiche avanzate sui corsi
+{% endblock title %}
+
+{%block content%}
+    <h1>Statistiche avanzate: </h1>
+    <h5>Corso con il maggior numero di posti disponibili: <a href="/corsi_formazione/view_b/{{corsoMax.id}}">{{corsoMax.titolo}}</a> ({{corsoMax.posti_disponibili}} posti)</h5>
+    <h5>Corso con il minor numero di posti disponibili: <a href="/corsi_formazione/view_b/{{corsoMin.id}}">{{corsoMin.titolo}}</a> ({{corsoMin.posti_disponibili}} posti)</h5>
+    <h5>Numero totale di posti disponibili per tutti i corsi:{{totPosti}}</h5>           
+{%endblock content%}

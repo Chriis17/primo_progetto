@@ -25,4 +25,6 @@ urlpatterns = [
     path('prima_app/',include("prima_app.urls",namespace="prima_app")),
     path('news/',include("news.urls",namespace="news")),
     path('voti_app/',include("voti_app.urls",namespace="voti")),
+    path('eventi_scolastici/',include("eventi_scolastici.urls",namespace="eventi_scolastici")),
+    path('corsi_formazione/',include("corsi_formazione.urls",namespace="corsi_formazione")),
 ]

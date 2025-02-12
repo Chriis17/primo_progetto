@@ -73,6 +73,22 @@
                   <div class="dropdown-divider"></div>
                 </div>
               </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Corsi formazione
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="{% url 'corsi_formazione:indexCorsi'%}">Index</a>
+                  <a class="dropdown-item" href="{% url 'corsi_formazione:view_a'%}">Corsi in ordine di data di inizio</a>
+                  <a class="dropdown-item" href="{% url 'corsi_formazione:view_b' 1 %}">Dettagli corso</a>
+                  <a class="dropdown-item" href="{% url 'corsi_formazione:view_c'%}">Corsi dopo il 01/05/2025</a>
+                  <a class="dropdown-item" href="{% url 'corsi_formazione:view_d'%}">Corsi con meno di 20 posti disponibili</a>
+                  <a class="dropdown-item" href="{% url 'corsi_formazione:view_e'%}">Corsi finiti entro il 30/04/2025</a>
+                  <a class="dropdown-item" href="{% url 'corsi_formazione:view_f'%}">Statistiche avanzate sui corsi</a>
+                  <div class="dropdown-divider"></div>
+                </div>
+              </li>
             
           </ul>
         </div>

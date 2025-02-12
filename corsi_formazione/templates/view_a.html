@@ -1,0 +1,15 @@
+{%extends "base.html"%}
+{% block title %} 
+   Elenco corsi per data
+{% endblock title %}
+
+{%block content%}
+    <h1>Corsi per data di inizio: </h1>
+    {% for corso in elenco_corsi %}
+        <ul>
+            <strong><li>Titolo:</strong>
+                <a href="/corsi_formazione/view_b/{{corso.id}}">{{corso.titolo}}</a>
+            </li>
+        </ul>
+    {% endfor %}
+{%endblock content%}
