@@ -1,3 +1,4 @@
+
 {% load static %}
 <!doctype html>
 <html lang="en">
@@ -74,6 +75,8 @@
                 </div>
               </li>
 
+
+
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                    Corsi formazione
@@ -110,7 +113,21 @@
                 <a class="nav-link" href="{% url 'login'%}">Login</a>
               </li>
             {%endif%}
-          </ul>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Contatti
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="{% url 'forms_app:contatti'%}">Contattaci</a>
+              <a class="dropdown-item" href="{% url 'forms_app:lista_contatti'%}">Lista contatti</a>
+              <div class="dropdown-divider"></div>
+            </div>
+          </li>
+
+
+
         </div>
     </nav>
 
@@ -124,6 +141,7 @@
         {%endblock script%}
       </div>
 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- Optional JavaScript; choose one of the two! -->
 
